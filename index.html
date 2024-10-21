@@ -3,85 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Email Marketing</title>
+    <title>Deploy com GitHub Actions no AWS S3</title>
     <style>
+        /* Estilos gerais */
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f6f6f6;
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
         }
         .container {
-            width: 100%;
-            max-width: 600px;
+            max-width: 1200px;
             margin: 0 auto;
-            background-color: #ffffff;
-            padding: 20px;
+            padding: 50px 20px;
         }
-        .header {
-            background-color: #0073e6;
-            color: #ffffff;
+
+        /* Cabeçalho */
+        header {
+            background-color: #24292e;
+            padding: 20px 0;
+            color: white;
             text-align: center;
-            padding: 20px;
         }
-        .header h1 {
+        header h1 {
+            font-size: 36px;
             margin: 0;
         }
-        .content {
-            padding: 20px;
-            text-align: center;
-        }
-        .content img {
-            width: 100%;
-            max-width: 300px;
-            height: auto;
-        }
-        .content p {
-            font-size: 16px;
-            color: #333333;
-        }
-        .cta-button {
-            background-color: #0073e6;
+
+        /* Banner */
+        .banner {
+            background-color: #0366d6;
+            padding: 100px 0;
             color: white;
-            padding: 15px 25px;
-            text-decoration: none;
-            border-radius: 5px;
-            display: inline-block;
-            margin-top: 20px;
-        }
-        .cta-button:hover {
-            background-color: #005bb5;
-        }
-        .footer {
-            font-size: 12px;
-            color: #888888;
             text-align: center;
-            padding: 10px;
-            background-color: #f6f6f6;
         }
-    </style>
-</head>
-<body>
+        .banner h1 {
+            font-size: 48px;
+            margin: 0;
+            animation: fadeIn 2s ease;
+        }
 
-    <div class="container">
-        <!-- Cabeçalho -->
-        <div class="header">
-            <h1>Promoção Especial!</h1>
-        </div>
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
 
-        <!-- Conteúdo Principal -->
-        <div class="content">
-            <img src="https://via.placeholder.com/300" alt="Imagem Promocional">
-            <p>Aproveite agora nossas ofertas incríveis com até 50% de desconto!</p>
-            <a href="https://www.seusite.com" class="cta-button">Compre Agora</a>
-        </div>
+        /* Seção de introdução */
+        .intro {
+            padding: 50px 0;
+            background-color: #ffffff;
+            text-align: center;
+        }
+        .intro h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        .intro p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #555;
+            max-width: 800px;
+            margin: 0 auto;
+        }
 
-        <!-- Rodapé -->
-        <div class="footer">
-            <p>Você está recebendo este e-mail porque se inscreveu em nossa newsletter.</p>
-            <p>Se não deseja mais receber nossos e-mails, <a href="#">clique aqui</a> para cancelar a inscrição.</p>
-        </div>
-    </div>
-
-</body>
-</html>
+        /* Seção de passos */
+        .steps {
+            background-color
