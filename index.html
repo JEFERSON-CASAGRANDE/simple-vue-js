@@ -1,13 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="pt-BR">
+<head>
     <meta charset="UTF-8">
-    <link rel="icon" href="/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+    <title>Email Marketing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f6f6f6;
+        }
+        .container {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+        }
+        .header {
+            background-color: #0073e6;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+        }
+        .header h1 {
+            margin: 0;
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+        .content img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+        }
+        .content p {
+            font-size: 16px;
+            color: #333333;
+        }
+        .cta-button {
+            background-color: #0073e6;
+            color: white;
+            padding: 15px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .cta-button:hover {
+            background-color: #005bb5;
+        }
+        .footer {
+            font-size: 12px;
+            color: #888888;
+            text-align: center;
+            padding: 10px;
+            background-color: #f6f6f6;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Cabeçalho -->
+        <div class="header">
+            <h1>Promoção Especial!</h1>
+        </div>
+
+        <!-- Conteúdo Principal -->
+        <div class="content">
+            <img src="https://via.placeholder.com/300" alt="Imagem Promocional">
+            <p>Aproveite agora nossas ofertas incríveis com até 50% de desconto!</p>
+            <a href="https://www.seusite.com" class="cta-button">Compre Agora</a>
+        </div>
+
+        <!-- Rodapé -->
+        <div class="footer">
+            <p>Você está recebendo este e-mail porque se inscreveu em nossa newsletter.</p>
+            <p>Se não deseja mais receber nossos e-mails, <a href="#">clique aqui</a> para cancelar a inscrição.</p>
+        </div>
+    </div>
+
+</body>
 </html>
